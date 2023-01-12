@@ -31,6 +31,7 @@
 	},
 	"homepage": "https://github.com/mennonitischer-gemeindetag/dashboard#readme",
 	"dependencies": {
-		"@wordpress/scripts": "^22.4.0"
+		"@wordpress/scripts": "^22.4.0",
+		"react-google-charts": "^4.0.0"
 	}
 }

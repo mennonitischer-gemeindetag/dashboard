@@ -18,7 +18,16 @@ add_action( 'wp_dashboard_setup', __NAMESPACE__ . '\create_dashboard_widgets', 1
 function create_dashboard_widgets() {
 
 	$widgets = [
-		'countdown-timer' => 'Countdown',
+		'anmeldungen-stats-widget'   => 'Anmeldungen',
+		'workshops-stats-widget'     => 'Workshop Anmeldungen',
+		'ausfluege-stats-widget'     => 'Ausflug Anmeldungen',
+		'essen-stats-widget'         => 'Essen Anmeldungen',
+		'tickets-stats-widget'       => 'Anmeldungen pro Tag',
+		'age-stats-widget'           => 'Alter der Anmeldungen',
+		'total-earnings-widget'      => 'Einnahmen',
+		'anmeldungen-kinderprogramm' => 'Anmeldungen Kinderprogramm',
+		'countdown-timer'            => 'Countdown',
+		'mennoconnect'               => 'Mennoconnect',
 	];
 
 	foreach ( $widgets as $widget_slug => $widget_title ) {
