@@ -42,7 +42,7 @@ const AusflugAnmeldeStatWidget = () => {
 						</thead>
 						<tbody id="the-list">
 							{ ausfluege
-								.sort( ( a, b ) => a.character > b.character && a.nr < b.character )
+								.sort( ( a, b ) => a.nr > b.nr )
 								.filter( ausflug => 'storniert' != ausflug.status )
 								.map( ( ausflug ) => {
 									const ausflugAnmeldungen = getAnmeldungen(
