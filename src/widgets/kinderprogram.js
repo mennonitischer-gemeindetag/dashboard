@@ -47,7 +47,7 @@ const KinderprogrammAnmeldungen = () => {
                             return (
                                 <tr>
                                     <td>
-												<a href={ `${site && site.url}/wp-admin/post.php?post=${id}&action=edit` } target="_blank" dangerouslySetInnerHTML={ {
+												<span dangerouslySetInnerHTML={ {
 													__html: title,
 												} } />
 											</td>
