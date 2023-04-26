@@ -11,8 +11,6 @@ const WorkshopAnmeldeStatWidget = () => {
 	const [ workshops, setWorkshops ] = useState( [] );
 	const [ isLoading, setIsLoading ] = useState( true );
 
-	const site = useSelect( select => select('core').getSite() );
-
 	useEffect( () => {
 		Promise.all( [
 			apiFetch( { path: 'wp/v2/anmeldung?per_page=5000' } ),
